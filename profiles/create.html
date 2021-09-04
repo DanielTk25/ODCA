@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Make Your Doctor Profile</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+
+<a href="https://odca-doctorside-chat.netlify.app">Login / Signup</a>
+
+     <div class="container mt-2">
+         <div class="card">
+             <div class="card-body">
+                 <form id="post-form">
+                     <center><h3>Make Your Doctor Profile</h3></center>
+                     <p style="text-align: center;">Once it shows successfully uploaded profile, you may go to the login/signup page</p>
+                     
+                     
+                     <textarea id="myName" class="form-control" placeholder="Whats your name"></textarea>
+                     <textarea id="link" class="form-control" placeholder="Your Linkedin profile link"></textarea>
+                     <textarea id="sp" class="form-control" placeholder="Specialization..Eg.Pediatrician"></textarea>
+                     <textarea style=" height: 153px;" id="post" maxlength = "200" class="form-control" placeholder="Short Description on yourself....Word Limit: 200 letters"></textarea>
+                     
+                     <input type="file" class="form-control" id="image" accept="images/*"> 
+                    
+                     <div class="text-center">
+                         
+                         <button type="button" class="btn btn-success" onclick="upload()">Upload</button>
+                     </div>
+
+                 </form>
+
+                 <p>Your profile will be posted after creating one over <a href="doctor-profiles.html">here</a></p>
+              </div>
+
+         </div>
+         <div class="row mt-4" id="posts">
+
+         </div>
+
+     </div>
+
+
+
+
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first...make sure you remove -app from below line -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBphqHgPUIJwZxOVihgHPl2yzbhQOzMwF4",
+    authDomain: "photo-share-b82b5.firebaseapp.com",
+    databaseURL: "https://photo-share-b82b5-default-rtdb.firebaseio.com",
+    projectId: "photo-share-b82b5",
+    storageBucket: "photo-share-b82b5.appspot.com",
+    messagingSenderId: "1000954536959",
+    appId: "1:1000954536959:web:c13617ee3084ababd47dca",
+    measurementId: "G-3MPBFX087D"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ // firebase.analytics();
+
+ 
+
+</script>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="create.js"></script>
+    </body>
+</html>

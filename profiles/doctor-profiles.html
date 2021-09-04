@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>ODCA Dotor Profiles</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+
+<a href="https://odca-patientside-chat.netlify.app">Meet your Doctor</a>
+
+     <div class="container mt-2">
+         <div class="card">
+             <div class="card-body">
+                 <form id="post-form">
+                     <center><h3>Doctors Profile</h3></center>
+                     <p style="text-align: center;">These are all the doctors using the app. Note down the name of your doctor as you will need it when you are gonna meet him on the app.</p>
+                     <p style="text-align: center;">To search for a specific doctor or a Specialization press ctrl+F on your keyboard</p>
+
+                 </form>
+              </div>
+
+         </div>
+         <div class="row mt-4" id="posts">
+
+         </div>
+
+     </div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first...make sure you remove -app from below line -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBphqHgPUIJwZxOVihgHPl2yzbhQOzMwF4",
+    authDomain: "photo-share-b82b5.firebaseapp.com",
+    databaseURL: "https://photo-share-b82b5-default-rtdb.firebaseio.com",
+    projectId: "photo-share-b82b5",
+    storageBucket: "photo-share-b82b5.appspot.com",
+    messagingSenderId: "1000954536959",
+    appId: "1:1000954536959:web:c13617ee3084ababd47dca",
+    measurementId: "G-3MPBFX087D"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ // firebase.analytics();
+
+ 
+
+</script>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="defualt.js"></script>
+    </body>
+</html>
